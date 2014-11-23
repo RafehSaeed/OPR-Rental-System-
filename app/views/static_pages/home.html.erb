@@ -1,10 +1,14 @@
-
 <%provide(:title, "Home")%>
 
-    <h1>Sample App</h1>
-    <p>
-      This is the home page for the
-      <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-      sample application.
-    </p>
- 
+<div class="center jumbotron">
+  <h1><%= link_to image_tag("rent_now.png", alt: "Rent logo"),
+            '' %></h1>
+
+  <h2>
+   Online Property Rental (OPR) is the best tool to rent properties of your choice, get started today!
+  </h2>
+
+  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+</div>
+
+<%= image_tag "agilelogo.jpg", size:"100x80" %>
