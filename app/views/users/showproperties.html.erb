@@ -1,0 +1,14 @@
+<% provide(:title, "My Properties") %>
+<h1>
+   My Listed Properties
+  </h1>
+          <%= @user.name %>
+         <h3>Properties Count (<%= @user.properties.count %>)
+        
+
+         </h3>
+             <%= render @property %>
+      
+ 
+</ul>
+

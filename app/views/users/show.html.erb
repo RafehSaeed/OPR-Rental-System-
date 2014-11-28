@@ -1,6 +1,17 @@
 <% provide(:title, @user.name) %>
 <h1>
   <%= gravatar_for @user %>
-  <%= @user.name %>
-  <%= @user.email %>
-</h1>
+  Account Information
+  </h1>
+  <ul class="center jumbotron">
+        <li> User Name:<%= @user.name %></li>
+        <li> User Emaill:<%= @user.email %></li>
+        <li> User Account Type:<%= @user.usertype %></li>
+
+ 
+</ul>
+
+    <% if current_user.usertype == "agent" %>
+
+  <%= link_to "Register User", signup_path, class: "btn btn-lg btn-primary" %>
+    <% end %>

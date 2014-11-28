@@ -1,0 +1,29 @@
+<% provide(:title, 'All Properties') %>
+<h1>Property Listings</h1>
+<div class="center jumbotron">
+
+<ul class="user">
+  <% @property.each do |property| %>
+  <div class="center jumbotron">
+    <li>
+  <boldt>UserID</boldt>:  	<%=property.user_id%>
+   <boldt>Property Type</boldt>: <%= property.propertytype%> 
+   <boldt>Bedrooms</boldt>:<%= property.bedrooms%> 
+   <boldt>Bathrooms</boldt>:<%= property.bathrooms%> 
+   <boldt>Rent</boldt>: <%= property.rent%> 
+   <boldt>Location</boldt>: <%= property.location%> 
+
+
+   </br>
+  <%= link_to "View Property", "properties/#{property.id}",class: "btn btn-lg btn-primary"%>
+    
+ 
+
+
+
+  
+    </li>
+    </div>
+  <% end %>
+  
+</ul>

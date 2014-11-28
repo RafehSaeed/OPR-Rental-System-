@@ -1,0 +1,36 @@
+<%provide(:title, "Add Property")%>
+<h1>Add Property</h1>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+
+
+ 	 <%= form_for(@property) do |f| %>
+ 	  <%= render 'shared/error_messages2' %>
+
+      <%= f.label :propertytype %>
+      <%= f.text_field :propertytype, class: 'form-control' %>
+
+      <%= f.label :address %>
+      <%= f.text_field :address, class: 'form-control' %>
+
+       <%= f.label :location %>
+      <%= f.text_field :location, class: 'form-control' %>
+
+      <%= f.label :bedrooms %>
+      <%= f.text_field :bedrooms, class: 'form-control' %>
+
+      <%= f.label :bathrooms %>
+      <%= f.text_field :bathrooms, class: 'form-control' %>
+
+      <%= f.label :otherroom %>
+      <%= f.text_field :otherroom, class: 'form-control' %>
+
+      <%= f.label :rent %>
+      <%= f.text_field :rent, class: 'form-control' %>
+
+
+      <%= f.submit "Add Property", class: "btn btn-primary" %>
+    <% end %>
+
+  </div>
+</div>

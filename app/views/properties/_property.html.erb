@@ -1,0 +1,27 @@
+<li>
+  
+  
+  Property Type: <%= property.propertytype%> 
+  Address: <%= property.address%> 
+  Location: <%= property.location%> 
+  Bedrooms:<%= property.bedrooms%> 
+  Bathrooms:<%= property.bathrooms%> 
+  Otherroom:<%= property.otherroom%> 
+  Rent: <%= property.rent%> 
+       <% if logged_in? %> 
+       <% if current_user.usertype=="owner" %>
+      | <%= link_to "Delete Property", property, method: :delete,
+                                  data: { confirm: "Confirm Deletion" },class: "btn btn-lg btn-primary" %>
+
+       
+
+  <% end %>
+ <% end %>
+
+      <% if logged_in? %> 
+       <% if current_user.usertype=="customer" %>                      
+        <%= link_to "Add to Visiting List",   addvl_path(property: property) ,class: "btn btn-lg btn-primary"%>
+        <% end %>
+<% end %>
+ 
+</li>

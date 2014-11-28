@@ -1,0 +1,11 @@
+<% provide(:title, "Visiting List") %>
+<h1>
+   My Visiting List
+  </h1>
+      
+    <%=    @list.each do |x|%>
+ <%= link_to "View Property", "properties/#{x}",class: "btn btn-lg btn-primary"%>
+<%end%>
+ 
+</ul>
+

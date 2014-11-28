@@ -16,6 +16,17 @@
       <%= f.label :password_confirmation, "Confirmation" %>
       <%= f.password_field :password_confirmation , class: 'form-control'%>
 
+            <%= f.label :remember_me, class: "checkbox inline" do %>
+        <%= f.check_box :usertype ,  {}, 'owner', 'customer' %>
+ 
+
+
+        <span>Owner</span>
+      <% end %>
+
+
+
+
       <%= f.submit "Create my account", class: "btn btn-primary" %>
     <% end %>
   </div>
