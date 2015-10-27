@@ -1,4 +1,4 @@
 ReadME
-https://mighty-beach-5296.herokuapp.com/properties
+https://mighty-beach-5296.herokuapp.com/
 This is a property rental system I created on ruby on rails.
 
