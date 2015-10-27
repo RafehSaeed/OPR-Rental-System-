@@ -1,4 +1,4 @@
 ReadME
-https://enigmatic-journey-5265.herokuapp.com/
+https://mighty-beach-5296.herokuapp.com/properties
 This is a property rental system I created on ruby on rails.
 
